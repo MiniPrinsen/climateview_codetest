@@ -1,8 +1,11 @@
-<h1>Calculator</h1>
+<div class="container">
+  <h1>Calculator</h1>
+
 
 <form [formGroup]="calculateForm" (ngSubmit)="onSubmit(calculateForm.value)">
   <input id="name" type="text" formControlName="input"/>
   <button class="button" type="submit">Calculate</button>
 
 </form>
-<h2 *ngIf="result">Result: {{ result }}</h2>
+<h2>{{ result }}</h2>
+</div>
